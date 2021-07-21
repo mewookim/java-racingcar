@@ -39,6 +39,6 @@ public class StringTest {
         assertThatThrownBy(() -> {
             "abc".charAt(4);
         }).isInstanceOf(StringIndexOutOfBoundsException.class)
-                .hasMessageContaining("Index: 2, Size: 2");
+                .hasMessageContaining("String index out of range: 4");
     }
 }
